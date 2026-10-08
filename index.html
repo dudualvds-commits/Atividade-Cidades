@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidades - Nova Orleans</title>
+</head>
+<body>
+    <header>
+        <p>Menu de Navegação: 
+            <a href="#sobre">Sobre</a> | 
+            <a href="#pontos-turisticos">Pontos turísticos</a> | 
+            <a href="#noticias">Notícias</a> | 
+            <a href="#formulario">Pesquisa & Contato</a>
+        </p>
+        <h1>Nova Orleans</h1>
+        <p>O berço do jazz, o coração da magia.</p>
+        <br>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Nova Orleans: O que você precisa saber</h2>
+            <p>
+                Localizada no estado da Louisiana, às margens do rio Mississippi, Nova Orleans é uma das cidades mais singulares e vibrantes dos Estados Unidos.<br> 
+                Conhecida por sua rica herança multicultural, a cidade mistura influências francesas, espanholas, africanas e caribenhas, o que se reflete diretamente em sua arquitetura, culinária e tradições.
+            </p>
+            
+            <img src="img/image-ps.jpg" alt="Cena de rua noturna em Nova Orleans com bondinho vermelho na Canal Street" width="555">
+            
+            <br><br><br>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mcz8x2KV72c?si=t_-BFc3hZmZlOZVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        </section>
+
+        <section id="pontos-turisticos">
+            <h2>Pontos turísticos</h2>
+            <h3>Lugares Para Visitar</h3>
+            <article>
+                <h3>French Quarter</h3>
+                <p>
+                    Vamos começar pelo French Quarter, o bairro mais antigo de New Orleans e um dos mais antigos dos Estados Unidos. O French Quarter foi estabelecido em 1718 quando a Louisiana ainda pertencia aos franceses. O Estado na sequência teve domínio espanhol e em 1803 foi vendido aos EUA, o curioso é que algumas palavrinhas francesas e muito da gastronomia ainda encontra-se incorporado na história da Luisiana e você sentirá isso por lá!
+                </p>
+                <label for="avaliacao-fq">Sua nota para este ponto turístico:</label> 
+                <select id="avaliacao-fq" name="avaliacao_french_quarter">
+                    <option value="1">1 - Regular</option>
+                    <option value="2">2 - Bom</option>
+                    <option value="3">3 - Muito Bom</option>
+                    <option value="4">4 - Ótimo</option>
+                    <option value="5" selected>5 - Excelente</option>
+                </select>
+            </article>
+
+            <br>  
+
+            <article>
+                <h3>Preservation Hall</h3>
+                <p>
+                    Há muita música boa tocando na rua, mas para curtir um jazz de verdade e uma experiência de arrepiar, a dica é o Preservation Hall, um dos palcos de jazz mais tradicionais dos Estados Unidos. Alguns dos melhores jazzistas do mundo já tocaram por lá. O espaço é apertado, o som é de primeira, a diversão é garantida e até as crianças são bem vindas. O show dura 45 minutos e passa rapidinho, você vai adorar! O Preservation Hall funciona como uma espécie de coletivo e trabalha com mais de 50 músicos diferentes que tocam 365 dias por ano. Em resumo: tem SEMPRE música boa tocando por lá.
+                </p>
+                <label for="avaliacao-ph">Sua nota para este ponto turístico:</label> 
+                <select id="avaliacao-ph" name="avaliacao_preservation_hall">
+                    <option value="1">1 - Regular</option>
+                    <option value="2">2 - Bom</option>
+                    <option value="3">3 - Muito Bom</option>
+                    <option value="4">4 - Ótimo</option>
+                    <option value="5" selected>5 - Excelente</option>
+                </select>
+            </article>
+        </section>
+
+        <section id="noticias">
+            <h2>Atualidades e Novidades</h2>
+            <article>
+                <h3>Três dicas imperdíveis para quem vai a Nova Orleans</h3>
+                <p>
+                    1. Morrow's é um lugar novo, aberto por um jovem empresário negro que já foi promoter de uma casa noturna. A mãe dele é a chef. Oferece pratos autênticos, com um cardápio que não segue padrões. Meu favorito é a massa com lagostim, que vem com peixe frito na guarnição e pão de alho como acompanhamento. Uma delícia!<br>
+                    <strong>Endereço:</strong> 2438 St. Claude Ave.
+                </p>
+            </article>
+        </section>
+
+        <section id="formulario">
+            <hr>
+            <h2>Pesquisa sobre Cidades & Contato</h2>
+            <p>Queremos saber mais sobre suas experiências e preferências de viagem!</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <p>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail de Contato:</label><br>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sua Experiência em Nova Orleans</legend>
+                    
+                    <p>
+                        <label for="cidade-interesse">Qual cidade listada você mais deseja conhecer ou já visitou?</label><br>
+                        <select id="cidade-interesse" name="cidade_interesse">
+                            <option value="nova-orleans" selected>Nova Orleans (EUA)</option>
+                            <option value="outra">Outra cidade cultural/histórica</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>Você já esteve em Nova Orleans?</label><br>
+                        <input type="radio" id="visitou-sim" name="visitou" value="sim">
+                        <label for="visitou-sim">Sim, já visitei</label><br>
+                        
+                        <input type="radio" id="visitou-nao" name="visitou" value="nao" checked>
+                        <label for="visitou-nao">Não, mas pretendo ir</label>
+                    </p>
+
+                    <p>
+                        <label>O que mais te atrai na cidade? (Pode marcar mais de uma opção)</label><br>
+                        <input type="checkbox" id="atracao-musica" name="atracoes" value="musica">
+                        <label for="atracao-musica">Música e Shows de Jazz</label><br>
+
+                        <input type="checkbox" id="atracao-culinaria" name="atracoes" value="culinaria">
+                        <label for="atracao-culinaria">Culinária Local (Gastronomia)</label><br>
+
+                        <input type="checkbox" id="atracao-historia" name="atracoes" value="historia">
+                        <label for="atracao-historia">História e Arquitetura</label><br>
+
+                        <input type="checkbox" id="atracao-eventos" name="atracoes" value="eventos">
+                        <label for="atracao-eventos">Festivais e Eventos (ex: Mardi Gras)</label>
+                    </p>
+
+                    <p>
+                        <label for="comentarios">Deixe suas sugestões, dúvidas ou dicas sobre a cidade:</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+                <button type="submit">Enviar Formulário</button>
+                <button type="reset">Limpar Campos</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <br>
+        <p>&copy; 2026 Guia de Cidades - A Luly e Madu, Todos os direitos reservados!</p>
+    </footer>
+</body>
+</html>
